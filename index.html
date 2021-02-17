@@ -65,13 +65,15 @@
 
 
         <script>
-        var KIUMData = $.get('KIUM.csv', function(CSVdata) {
-            KIUM = $.csv.toArray(CSVdata);
-            console.log(KIUMData);
+        var KIUM = $.get('KIUM.csv', function(CSVdata) {
+            KIUMData = $.csv.toArray(CSVdata);
+            //console.log(KIUMData);
         });
 	</script>
 
 	<script>
+		
+	console.log(KIUMData);
        
 	Highcharts.chart('container', {
 	chart: {
