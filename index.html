@@ -65,7 +65,7 @@
 
 
         <script>
-        $.get('KIUM.csv', function(CSVdata) {
+        var KIUMData = $.get('KIUM.csv', function(CSVdata) {
             KIUMdata = $.csv.toArray(CSVdata);
             console.log(KIUMdata);
         });
